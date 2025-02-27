@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости крыши</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <div class="wrapper">
+            <div class="container flex">
+                <h1 class="title">
+                    Добро пожаловать в калькулятор расчёта кровельных материалов!<br>Заполните несколько простых шагов, и мы
+                    подберём для вас оптимальный комплект материалов.
+                </h1>
+                <form action="#" method="post" id="form" class="form form__body flex">
+                        <div class="form__item">
+                            <label for="square" class="form__text">Какова площадь вашей кровли (м²)</label>
+                            <input type="number" name="square" class="form__control square _req" id="square" placeholder="100" onchange="formValueCalc()">
+                        </div>
+                        <div class="form__item">
+                            <label for="krov" class="form__text">Выберите тип вашей кровли</label>
+                            <select name="krov" class="form__control" id="krov" onchange="formValueCalc()">
+                            <option value="10">Односкатная</option>
+                            <option value="10">Двускатная</option>
+                            <option value="25">Вальмовая</option>
+                            <option value="35">Сложная</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="coverage" class="form__text">Выберите покрытие для металла</label>
+                            <select name="coverage" class="form__control" id="coverage" onchange="formValueCalc()">
+                            <option value="1">Полиэстер (до 10 лет службы)</option>
+                            <option value="10">Пластизол (повышенная защита )</option>
+                            <option value="20">Пурал (до 30 лет службы)</option>
+                            <option value="30">Полидифторид (срок службы до 50 лет)</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="membrane" class="form__text">Выберите подкровельную плёнку</label>
+                            <select name="membrane" class="form__control" id="membrane" onchange="formValueCalc()">
+                            <option value="1.5">Гидроизоляционная (защита от влаги)</option>
+                            <option value="3">Диффузионная мембрана</option>
+                            <option value="4">Усиленная диффузионная мембрана</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="complete" class="form__text">Выберите дополнительные элементы для кровли</label>
+                            <select name="complete" class="form__control" id="complete" onchange="formValueCalc()">
+                            <option value="20">Базовый комплект</option>
+                            <option value="35">Полный комплект</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="total" class="form__text">Ваш расчёт стоимости кровельных материалов готов</label>
+                            <input type="text" name="total" class="form__control total" id="total" value="0">
+                        </div>
+                        <div class="form__item">
+                            <label for="contact" class="form__text">Чтобы получить PDF-смету с точным расчётом, отправьте ваш мессенджер (Viber, Telegram )</label>
+                            <input type="tel" name="contact" class="form__control contact _req" id="contact" placeholder="Введите номер телефона">
+                        </div>
+                        <button type="submit" class="btn btn-reset">отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

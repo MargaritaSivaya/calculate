@@ -1,0 +1,45 @@
+@media (max-width: 1020px) {
+    .btn,
+    .title,
+    .form__text,
+    .form__control,
+    .form__control::placeholder {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .btn,
+    .form__control {
+     width: 80%;
+     height: 55px;
+  }
+}
+
+@media (max-width: 620px) {
+    .wrapper {
+        padding: 25px 0;
+      }
+
+    .btn,
+    .title,
+    .form__text,
+    .form__control,
+    .form__control::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .btn,
+    .form__control {
+     width: 80%;
+     height: 45px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .form__item {
+    margin-bottom: 20px;
+  }
+}
